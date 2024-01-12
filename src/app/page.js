@@ -1,6 +1,8 @@
 import Navbar from "./components/Navbar";
 import About from "./sections/About";
 import Hero from "./sections/Hero";
+import Projects from "./sections/Projects";
+import Skills from "./sections/Skills";
 import WorkExperience from "./sections/WorkExperience";
 
 
@@ -16,6 +18,12 @@ export default function Home() {
     </section>
     <section id="experience" className="snap-center">
       <WorkExperience />
+    </section>
+    <section id="skills" className="snap-start">
+      <Skills />
+    </section>
+    <section id="projects" className="snap-start">
+      <Projects />
     </section>
   </div>
   )
