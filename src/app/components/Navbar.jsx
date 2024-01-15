@@ -1,5 +1,6 @@
 'use client'
 import { motion } from "framer-motion"
+import Link from "next/link"
 import { SocialIcon } from "react-social-icons"
 
 const Navbar = () => {
@@ -23,7 +24,8 @@ const Navbar = () => {
         <SocialIcon url="https://linkedIn/joseph kimani" fgColor="gray" bgColor="transparent" />
         <SocialIcon url="https://github.com/ceasor07" fgColor="gray" bgColor="transparent" />
     </motion.div>
-
+    
+    <Link href="#contact">
     <motion.div
         initial={{
             x: 500,
@@ -40,6 +42,8 @@ const Navbar = () => {
         <SocialIcon className="cursor-pointer" network="email" fgColor="gray" bgColor="transparent" />
         <p className="uppercase hidden md:inline-flex text-sm text-gray-400">Get in touch</p>
     </motion.div>
+    </Link>
+    
 </header>
   )
 }
